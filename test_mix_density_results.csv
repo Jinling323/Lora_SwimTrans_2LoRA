@@ -1,0 +1,10 @@
+model,domain,density,scope,split,images,mae,rmse,checkpoint
+baseline,clean,low,category,val,47,25.327203791192236,33.98272985326393,model/swin_t_trans/baseline/0922-200006/best_model.pth
+baseline,clean,medium,category,val,89,57.87668703915028,75.96643369676582,model/swin_t_trans/baseline/0922-200006/best_model.pth
+baseline,all,all,route_total,val,136,46.627968563753015,64.6191804726996,model/swin_t_trans/baseline/0922-200006/best_model.pth
+lora,clean,high,category,val,46,106.57725193189538,139.87077686127398,model/swin_t_trans/lora/0923-103544/best_model.pth
+lora,hazy,low,category,val,47,24.71665402676197,40.73807690288337,model/swin_t_trans/lora/0923-103544/best_model.pth
+lora,hazy,high,category,val,46,153.44148785135022,209.11835678740476,model/swin_t_trans/lora/0923-103544/best_model.pth
+lora,hazy,medium,category,val,89,66.00229413321848,83.92960061115868,model/swin_t_trans/lora/0923-103544/best_model.pth
+lora,all,all,route_total,val,228,83.31907432957699,125.94330709022745,model/swin_t_trans/lora/0923-103544/best_model.pth
+hybrid,all,all,overall,val,364,69.61030953795046,107.21702109497369,baseline=model/swin_t_trans/baseline/0922-200006/best_model.pth | lora=model/swin_t_trans/lora/0923-103544/best_model.pth
